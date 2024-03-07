@@ -1,0 +1,55 @@
+@import '/src/styles/variables.scss';
+
+.inputComponent {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  label {
+    position: absolute;
+    left: 15px;
+    top: -15px;
+    background-color: $background-color;
+    padding: 2px 5px;
+    color: gray;
+    font-size: small;
+  }
+
+  .labelVisibility {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    pointer-events: none;
+  }
+
+  .hidden {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+
+  input {
+    min-width: 380px;
+
+    &:focus {
+      outline: 2px solid $secondary-color;
+    }
+  }
+
+  p {
+    color: gray;
+    font-size: small;
+    pointer-events: none;
+  }
+
+  .error_message {
+    color: red;
+  }
+}
+
+.error {
+  label {
+    color: red;
+  }
+  input {
+    border: 1px solid red;
+  }
+}

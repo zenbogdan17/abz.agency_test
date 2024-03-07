@@ -1,0 +1,35 @@
+.carts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+
+  position: relative;
+
+  .carts_list {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    gap: 29px;
+  }
+  @media screen and (max-width: 1024px) {
+    .carts_list {
+      padding: 0 60px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .carts_list {
+      padding: 0 32px;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media screen and (max-width: 360px) {
+    .carts_list {
+      padding: 0;
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+  }
+}

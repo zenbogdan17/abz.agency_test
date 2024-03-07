@@ -1,0 +1,26 @@
+header {
+  background: #ffffff;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+
+  div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1170px;
+    height: 60px;
+    margin: 0 auto;
+
+    .logo {
+      width: 104px;
+      height: 26px;
+    }
+
+    nav {
+      display: flex;
+      gap: 10px;
+    }
+  }
+}
