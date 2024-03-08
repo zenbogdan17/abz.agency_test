@@ -9,6 +9,7 @@ const Card = ({ user }) => {
         <img
           src={isValidURL(user.photo) ? user.photo : placeholderImage}
           alt={'user' + user.name}
+          loading="lazy"
         />
       </div>
 

@@ -26,7 +26,7 @@
     }
   }
 
-  @media screen and (max-width: 360px) {
+  @media screen and (max-width: 540px) {
     .carts_list {
       padding: 0;
       grid-template-columns: repeat(1, minmax(0, 1fr));

@@ -61,4 +61,10 @@
   img {
     width: 328px;
   }
+
+  @media screen and (max-width: 400px) {
+    form {
+      margin: 0 20px;
+    }
+  }
 }
